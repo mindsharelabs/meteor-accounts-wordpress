@@ -1,0 +1,18 @@
+TODO
+====
+- [x] Make the WP URL interchangeable
+- [x] Make WP API configurable via UI on first run.
+- [x] Set useful autopublish accounts publications
+- [x] Make SSL dev/debug only
+- [x] Handle Refresh Token / Token Expiry
+- [ ] Check Redirect flow (as opposed to popup)
+- [ ] Finish README
+- [ ] Filter some serviceData into options in Oauth.registerService?
+- [ ] Confirm / fix inclusion of "https://" in server
+- [ ] Write up instructions for wordpress_configuration.html
+
+
+TEST SCRIPTS
+============
+1. Reset browser & log in from scratch
+2. ...
