@@ -8,7 +8,7 @@ TODO
 - [x] Check Redirect flow (as opposed to popup)
 - [x] Confirm / fix inclusion of "https://" in server
 - [x] Write up instructions for wordpress_configuration.html
-- [ ] Finish README
+- [x] Finish README
 - [ ] Test WP API again
 - [ ] Filter some serviceData into options in Oauth.registerService?
 
