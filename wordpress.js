@@ -10,8 +10,24 @@ Wordpress.authServer = function () {
 
   var wpConfig = ServiceConfiguration.configurations.findOne({service: 'wordpress'});
   if (wpConfig && wpConfig.hasOwnProperty('authServerURL')) {
-    return wpConfig.authServerURL;
+    var serverUrl = wpConfig.authServerURL;
+    var schemaPos = serverUrl.indexOf('://');
+
+    // Confirm schema is https:// and insert schema if it's missing
+    if (schemaPos > -1) {
+      if (serverUrl.substring(0, schemaPos).toLowerCase() !== 'https') {
+        var errMsg = "Auth server isn't SSL - " + serverUrl;
+        if (Meteor.isClient) {
+          alert (errMsg);
+        }
+        throw new Error(errMsg);
+      }
+      return serverUrl;
+    }
+    return 'https://' + serverUrl;
+
   } else {
+    // authServerUrl is not configured
     throw new ServiceConfiguration.ConfigError();
   }
 };

@@ -5,10 +5,10 @@ TODO
 - [x] Set useful autopublish accounts publications
 - [x] Make SSL dev/debug only
 - [x] Handle Refresh Token / Token Expiry
-- [ ] Check Redirect flow (as opposed to popup)
+- [x] Check Redirect flow (as opposed to popup)
+- [x] Confirm / fix inclusion of "https://" in server
 - [ ] Finish README
 - [ ] Filter some serviceData into options in Oauth.registerService?
-- [ ] Confirm / fix inclusion of "https://" in server
 - [ ] Write up instructions for wordpress_configuration.html
 
 
