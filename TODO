@@ -7,9 +7,12 @@ TODO
 - [x] Handle Refresh Token / Token Expiry
 - [x] Check Redirect flow (as opposed to popup)
 - [x] Confirm / fix inclusion of "https://" in server
+- [x] Write up instructions for wordpress_configuration.html
 - [ ] Finish README
+- [ ] Test WP API again
 - [ ] Filter some serviceData into options in Oauth.registerService?
-- [ ] Write up instructions for wordpress_configuration.html
+
+
 
 
 TEST SCRIPTS

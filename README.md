@@ -9,6 +9,19 @@ Make sure Grant Type 'Authorization Code' is supported under Wordpress's Setting
 Make sure Permalinks are not default
 
 
+## Hosting
+
+    To use it set up a wordpress site on your webhost.
+    1. Make sure it's an https:// site. You'll want your own certificate,
+    but there is a way to disable this in the plugin (at your own risk).
+
+    2. Install and configure the commercial WP Oauth Server plugin.
+      a. 
+
+    Set up a wordpress install on your webhost an dinstal
+    Configure your Wordpress client:
+
+
 ## Configuring
 
 1. Configure via popup screen that appears when server is first run
