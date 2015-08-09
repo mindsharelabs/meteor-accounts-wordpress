@@ -35,7 +35,7 @@ This package is for authenticating with self-hosted wordpress sites using the co
 
 You may run into trouble with a local Wordpress server (e.g. unusuable client config box).
 
-The OAuth server needs a public URL for redirection. You can use a service like http://ngrok.com/ to expose your localhost. You'll need to set the ROOT_URL="https://YOUR_SUBDOMAIN_HERE.ngrok.io" environment variable. You may also need to access your localhost site via this ngrok domain rather than localhots. 
+The OAuth server needs a public URL for redirection. You can use a service like http://ngrok.com/ to expose your localhost. You'll need to set the ROOT_URL="https://YOUR_SUBDOMAIN_HERE.ngrok.io" environment variable. You may also need to access your localhost site via this ngrok domain rather than localhost. 
 
 
 TODO
