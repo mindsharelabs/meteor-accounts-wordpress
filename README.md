@@ -1,6 +1,6 @@
 #Meteor Login Service for self-hosted Wordpress accounts
 
-This package is for authenticating with self-hosted wordpress sites using the commercial WP OAuth Server plugin from <a href ="https://wp-oauth.com/" target="_blank">https://wp-oauth.com/</a>. It is not for authenticating usingwordpress.com.
+This package is for authenticating with self-hosted wordpress sites using the commercial WP OAuth Server plugin from <a href ="https://wp-oauth.com/" target="_blank">https://wp-oauth.com/</a>. It is not for authenticating using wordpress.com.
 
 ##Setting up
 
@@ -41,6 +41,6 @@ The OAuth server needs a public URL for redirection. You can use a service like 
 TODO
 ====
 - [x] Support OAuth2 via wp-oauth.com's OAuth Server Plugin
-- [ ] Support WP API
+- [x] Support WP API
 - [ ] Support OAuth1 via WP API v1 or v2
 
