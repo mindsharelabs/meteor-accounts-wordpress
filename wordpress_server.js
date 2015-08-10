@@ -20,12 +20,8 @@ Oauth.registerService('wordpress', 2, null, function(query) {
   });
 
   return {
-    serviceData: serviceData
-    // DFL TODO: Filter serviceData (whitelist) & move into options?
-    //, options: {
-    //  profile: { name: identity.display_name },
-    //  services: { wordpress: identity }
-    //}
+    serviceData: serviceData,
+    options: { profile: { name: identity.display_name } }
   };
 });
 
