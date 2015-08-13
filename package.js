@@ -1,8 +1,9 @@
 Package.describe({
   name: 'mindsharelabs:accounts-wordpress',
-  version: '0.2.0',
+  version: '0.2.1',
   summary: 'Login service for self-hosted WordPress accounts',
   git: 'https://github.com/mindsharestudios/meteor-accounts-wordpress.git',
+  documentation: 'README.md'
 });
 
 Package.on_use(function(api) {

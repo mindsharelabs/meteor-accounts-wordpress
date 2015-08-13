@@ -1,8 +1,10 @@
-#Meteor Login Service for self-hosted Wordpress accounts
+Meteor Login Service for self-hosted Wordpress accounts
+=======================================================
 
 This package is for authenticating with self-hosted wordpress sites using the commercial WP OAuth Server plugin from <a href ="https://wp-oauth.com/" target="_blank">https://wp-oauth.com/</a>. It is not for authenticating using wordpress.com.
 
-##Setting up
+Setting up
+----------
 
 1. Go to your self hosted wordpress page. Log in to the admin panel, then install and activate the "WP OAuth Server" plugin (license required).
 
