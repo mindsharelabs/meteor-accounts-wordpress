@@ -1,4 +1,4 @@
-Meteor Login Service for self-hosted Wordpress accounts
+Meteor Login Service for self-hosted WordPress accounts
 =======================================================
 
 This package is for authenticating with self-hosted wordpress sites using the commercial WP OAuth Server plugin from <a href ="https://wp-oauth.com/" target="_blank">https://wp-oauth.com/</a>. It is not for authenticating using wordpress.com.
@@ -10,7 +10,7 @@ Setting up
 
 2. Make sure Grant Type 'Authorization Code' is supported under Settings / Oauth Server / Advanced Configuration
 
-3. Make sure Wordpress Permalinks are NOT default. Anything other than the "/?p=123" option works.
+3. Make sure WordPress Permalinks are NOT default. Anything other than the "/?p=123" option works.
 
 3. Add a new client under under Settings / OAuth Server / Clients.
  
@@ -18,16 +18,20 @@ Setting up
 
 5. Note the Client ID and Secret. Enter these in the config popup when you first run your meteor app. Alternately you can configure this programatically by running this code on the server:
 
-    ServiceConfiguration.configurations.remove({
-     service: 'wordpress'
-    });
-    
-    ServiceConfiguration.configurations.insert({
-     service: 'wordpress',
-     clientId: 'CLIENT_ID',
-     secret: 'SECRET',
-     authServerURL: 'AUTH_SERVER'
-    });
+```javascript
+
+	ServiceConfiguration.configurations.remove({
+		service: 'wordpress'
+	});
+	
+	ServiceConfiguration.configurations.insert({
+		service: 'wordpress',
+		clientId: 'CLIENT_ID',
+		secret: 'SECRET',
+		authServerURL: 'AUTH_SERVER'
+	});
+	
+```
 
 6. Make sure your server supports SSL. Without a valid SSL certificate your authentication will fail. You can disable this check (e.g. in development) by adding the following to Meteor.settings: 
 
@@ -35,7 +39,7 @@ Setting up
     
 ## Debugging Locally
 
-You may run into trouble with a local Wordpress server (e.g. unusuable client config box).
+You may run into trouble with a local WordPress server (e.g. unusuable client config box).
 
 The OAuth server needs a public URL for redirection. You can use a service like http://ngrok.com/ to expose your localhost. You'll need to set the ROOT_URL="https://YOUR_SUBDOMAIN_HERE.ngrok.io" environment variable. You may also need to access your localhost site via this ngrok domain rather than localhost. 
 

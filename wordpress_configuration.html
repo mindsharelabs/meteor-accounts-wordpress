@@ -1,17 +1,17 @@
-<template name="configureLoginServiceDialogForWordpress">
-  <p>
-    This service is for authenticating with self-hosted wordpress sites using the commercial WP OAuth Server plugin from <a href ="https://wp-oauth.com/" target="_blank">https://wp-oauth.com/</a>
-    <br>
-    Please check the README.md included with this package (mindshare:meteor-accounts-wordpress) for detailed instructions.
-    <br>
-    Quick start:
-  </p>
-  <ol>
-    <li>
-      Go to your self hosted wordpress page. Install and activate the WP OAuth server plugin.
-    </li>
-    <li>
-      Configure a new client under under Settings / OAuth Server / Clients. Use <span class="url">{{siteUrl}}_oauth/wordpress</span> as the redirect URI.
-    </li>
-  </ol>
+<template name="configureLoginServiceDialogForWordPress">
+	<p>
+		This service is for authenticating with self-hosted wordpress sites using the commercial WP OAuth Server plugin from <a href="https://wp-oauth.com/" target="_blank">https://wp-oauth.com/</a>
+		<br>
+		Please check the README.md included with this package (mindshare:meteor-accounts-wordpress) for detailed instructions.
+		<br>
+		Quick start:
+	</p>
+	<ol>
+		<li>
+			Go to your self hosted wordpress page. Install and activate the WP OAuth server plugin.
+		</li>
+		<li>
+			Configure a new client under under Settings / OAuth Server / Clients. Use <span class="url">{{siteUrl}}_oauth/wordpress</span> as the redirect URI.
+		</li>
+	</ol>
 </template>
