@@ -3,11 +3,11 @@ Package.describe({
   version: '0.2.0',
   summary: 'Login service for self-hosted WordPress accounts',
   git: 'https://github.com/mindsharestudios/meteor-accounts-wordpress.git',
-//  documentation: 'README.md'
+  documentation: 'README.md'
 });
 
 Package.on_use(function(api) {
-  api.versionsFrom('METEOR@1.0.0');
+  api.versionsFrom('METEOR@0.9.4');
   api.use('accounts-base', ['client', 'server']);
   api.imply('accounts-base', ['client', 'server']);
   api.use('accounts-oauth', ['client', 'server']);
