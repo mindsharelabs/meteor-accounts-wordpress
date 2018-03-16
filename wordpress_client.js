@@ -30,5 +30,6 @@ WordPress.requestCredential = function(options, credentialRequestCompleteCallbac
         , loginUrl: loginUrl
         , credentialRequestCompleteCallback: credentialRequestCompleteCallback
         , credentialToken: credentialToken
+        , popupOptions: options.popupOptions || {}
     });
 };
